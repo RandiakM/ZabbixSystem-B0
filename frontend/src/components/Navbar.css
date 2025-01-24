@@ -1,0 +1,81 @@
+/* frontend/src/components/Navbar.css */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--surface);
+    padding: var(--spacing-medium);
+    box-shadow: var(--shadow-medium);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-left {
+    display: flex;
+    gap: var(--spacing-medium);
+  }
+  
+  .navbar-left a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  
+  .navbar-left a:hover {
+    color: var(--primary);
+  }
+  
+  .user-menu {
+    position: fixed;
+    bottom: var(--spacing-medium);
+    left: var(--spacing-medium);
+    z-index: 1000;
+  }
+  
+  .user-menu-button {
+    background-color: var(--primary);
+    color: var(--text);
+    border: none;
+    padding: var(--spacing-small) var(--spacing-medium);
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .user-menu-button:hover {
+    background-color: var(--secondary);
+  }
+  
+  .user-menu-dropdown {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background-color: var(--surface);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    padding: var(--spacing-small);
+    border-radius: 4px;
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .user-menu-dropdown a {
+    color: var(--text);
+    text-decoration: none;
+    padding: var(--spacing-small);
+  }
+  
+  .user-menu-dropdown button {
+    background: none;
+    border: none;
+    color: var(--text);
+    text-align: left;
+    padding: var(--spacing-small);
+    cursor: pointer;
+  }
+  
+  .user-menu-dropdown a:hover,
+  .user-menu-dropdown button:hover {
+    background-color: var(--background);
+  }
